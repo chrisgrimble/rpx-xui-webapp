@@ -5,7 +5,7 @@ import { valueOrNull } from '../lib/util'
 
 const url = config.services.idam.idamApiUrl
 
-const idamSecret = process.env.IDAM_SECRET || 'AAAAAAAAAAAAAAAA'
+const idamSecret = process.env.IDAM_SECRET || 'OOOOOOOOOOOOOOOO'
 const idamClient = config.idamClient
 const idamProtocol = config.protocol
 const oauthCallbackUrl = config.services.idam.oauthCallbackUrl
@@ -40,6 +40,11 @@ export async function getUser(email = null) {
 
 export async function postOauthToken(code, host) {
     const redirectUri = `${idamProtocol}://${host}/${oauthCallbackUrl}`
+
+    console.log("CODE: " + `${code}`);
+    console.log("idamClient: " + `${idamClient}`);
+    console.log("idamSecret: " + `${idamSecret}`);
+    console.log("idamSecret: " + `${redirectUri}`);
 
     const urlX = `${url}/oauth2/token?grant_type=authorization_code&code=${code}&redirect_uri=${redirectUri}`
     const options = {

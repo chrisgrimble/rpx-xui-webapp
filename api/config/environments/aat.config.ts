@@ -19,7 +19,7 @@ export default {
         em_anno_api: 'http://em-anno-aat.service.core-compute-aat.internal',
         idam: {
             idamApiUrl: 'https://idam-api.aat.platform.hmcts.net',
-            idamClientID: 'xuiwebapp',
+            idamClientID: 'ccd_gateway',
             idamLoginUrl: 'https://idam-web-public.aat.platform.hmcts.net',
             indexUrl: '/',
             oauthCallbackUrl: 'oauth2/callback',

@@ -1,8 +1,8 @@
 export default {
     health: {
-        ccdComponentApi: 'http://ccd-api-gateway-web-aat.service.core-compute-aat.internal/health',
-        ccdDataApi: 'http://ccd-data-store-api-aat.service.core-compute-aat.internal/health',
-        documentsApi: 'http://dm-store-aat.service.core-compute-aat.internal/health',
+        ccdComponentApi: 'http://localhost:3453/health',
+        ccdDataApi: 'http://localhost:4452/health',
+        documentsApi: 'http://localhost:4630/health',
         em_anno_api: 'http://em-anno-aat.service.core-compute-aat.internal/health',
     },
     logging: 'debug',
@@ -15,21 +15,21 @@ export default {
     secureCookie: false,
     services: {
         ccd: {
-            componentApi: 'http://ccd-api-gateway-web-aat.service.core-compute-aat.internal',
-            dataApi: 'http://ccd-data-store-api-aat.service.core-compute-aat.internal',
+            componentApi: 'http://localhost:3453',
+            dataApi: 'http://localhost:4452',
         },
         documents: {
-            api: 'http://dm-store-aat.service.core-compute-aat.internal',
+            api: 'http://localhost:4630',
         },
         em_anno_api: 'http://em-anno-aat.service.core-compute-aat.internal',
         idam: {
-            idamApiUrl: 'https://idam-api.aat.platform.hmcts.net',
-            idamClientID: 'xuiwebapp',
-            idamLoginUrl: 'https://idam-web-public.aat.platform.hmcts.net',
+            idamApiUrl: 'http://localhost:5000',
+            idamClientID: 'ccd_gateway',
+            idamLoginUrl: 'http://localhost:3501',
             indexUrl: '/',
             oauthCallbackUrl: 'oauth2/callback',
         },
-        s2s: 'http://rpe-service-auth-provider-aat.service.core-compute-aat.internal',
+        s2s: 'http://service-auth-provider-api:4502',
     },
     sessionSecret: 'secretSauce',
 }
