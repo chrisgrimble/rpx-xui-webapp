@@ -95,7 +95,7 @@ const redirectUrl = {
   ithc: 'https://idam-web-public.ithc.platform.hmcts.net',
   prod: 'https://hmcts-access.service.gov.uk',
   perftest: 'https://idam-web-public.perftest.platform.hmcts.net',
-  localhost: 'https://idam-web-public.aat.platform.hmcts.net'
+  localhost: 'http://localhost:3501'
 };
 
 
