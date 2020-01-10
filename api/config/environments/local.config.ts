@@ -8,10 +8,6 @@ export default {
     logging: 'debug',
     loginRoleMatcher: 'caseworker',
     protocol: 'http',
-    proxy: {
-        host: '172.16.0.7',
-        port: 8080,
-    },
     secureCookie: false,
     services: {
         ccd: {
@@ -29,7 +25,8 @@ export default {
             indexUrl: '/',
             oauthCallbackUrl: 'oauth2/callback',
         },
-        s2s: 'http://service-auth-provider-api:4502',
+        s2s: 'http://localhost:4502',
     },
     sessionSecret: 'secretSauce',
+    useProxy: false
 }

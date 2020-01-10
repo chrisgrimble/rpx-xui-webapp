@@ -41,19 +41,14 @@ export async function getUser(email = null) {
 export async function postOauthToken(code, host) {
     const redirectUri = `${idamProtocol}://${host}/${oauthCallbackUrl}`
 
-    console.log("CODE: " + `${code}`);
-    console.log("idamClient: " + `${idamClient}`);
-    console.log("idamSecret: " + `${idamSecret}`);
-    console.log("idamSecret: " + `${redirectUri}`);
-
     const urlX = `${url}/oauth2/token?grant_type=authorization_code&code=${code}&redirect_uri=${redirectUri}`
     const options = {
         headers: {
             Authorization: `Basic ${Buffer.from(`${idamClient}:${idamSecret}`).toString('base64')}`,
-            'Content-Type': 'application/x-www-form-urlencoded',
-        },
+            'Content-Type': 'application/x-www-form-urlencoded'
+        }
     }
-
+    
     const response = await http.post(urlX, {}, options)
 
     return response.data
