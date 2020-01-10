@@ -45,10 +45,10 @@ export async function postOauthToken(code, host) {
     const options = {
         headers: {
             Authorization: `Basic ${Buffer.from(`${idamClient}:${idamSecret}`).toString('base64')}`,
-            'Content-Type': 'application/x-www-form-urlencoded',
-        },
+            'Content-Type': 'application/x-www-form-urlencoded'
+        }
     }
-
+    
     const response = await http.post(urlX, {}, options)
 
     return response.data
