@@ -4,7 +4,7 @@ export const application = {
         token: '__auth__',
         userId: '__userid__',
     },
-    idamClient: 'xuiwebapp',
+    idamClient: 'ccd_gateway',
     localEnv: 'local',
     log4jui: {
         appenders: {
@@ -21,7 +21,7 @@ export const application = {
         },
     },
     maxCCDRetries: 3,
-    microservice: 'xui_webapp',
+    microservice: 'iac',
     oauthCallbackUrl: 'oauth2/callback',
     platformCookie: 'platform',
     protocol: 'https',
