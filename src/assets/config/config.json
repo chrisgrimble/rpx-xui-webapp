@@ -26,9 +26,9 @@
   },
   "urls": {
     "idam": {
-      "idamApiUrl": "https://idam-api.ithc.platform.hmcts.net",
-      "idamClientID": "xuiwebapp",
-      "idamLoginUrl": "https://idam-web-public.ithc.platform.hmcts.net",
+      "idamApiUrl": "http://sidam-api:4501",
+      "idamClientID": "ccd_gateway",
+      "idamLoginUrl": "http://idam-web-public:3501",
       "indexUrl": "/",
       "oauthCallbackUrl": "oauth2/callback"
     }

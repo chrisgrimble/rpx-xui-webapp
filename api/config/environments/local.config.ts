@@ -2,7 +2,7 @@ export default {
     health: {
         ccdComponentApi: 'http://localhost:3453/health',
         ccdDataApi: 'http://localhost:4452/health',
-        documentsApi: 'http://localhost:4630/health',
+        documentsApi: 'http://localhost:4506/health',
         em_anno_api: 'http://em-anno-aat.service.core-compute-aat.internal/health',
     },
     logging: 'debug',
@@ -15,7 +15,7 @@ export default {
             dataApi: 'http://localhost:4452',
         },
         documents: {
-            api: 'http://localhost:4630',
+            api: 'http://dm-store:4506',
         },
         em_anno_api: 'http://em-anno-aat.service.core-compute-aat.internal',
         idam: {
@@ -28,5 +28,5 @@ export default {
         s2s: 'http://localhost:4502',
     },
     sessionSecret: 'secretSauce',
-    useProxy: false
+    useProxy: false,
 }

@@ -4,7 +4,7 @@ export const application = {
         token: '__auth__',
         userId: '__userid__',
     },
-    idamClient: 'xuiwebapp',
+    idamClient: 'ccd_gateway',
     localEnv: 'local',
     log4jui: {
         appenders: {
