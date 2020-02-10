@@ -6,9 +6,9 @@ const config = {
     sauceSeleniumAddress: 'ondemand.saucelabs.com:443/wd/hub',
     allScriptsTimeout: 111000,
     specs: common.specFilesFilter,
-    baseUrl: (process.env.TEST_URL || 'http://localhost:3000/').replace('https', 'http'),
+    baseUrl: (process.env.TEST_URL || 'http://localhost:3002/').replace('https', 'http'),
     params: {
-        serverUrls: process.env.TEST_URL || 'http://localhost:3000/',
+        serverUrls: process.env.TEST_URL || 'http://localhost:3002/',
         targetEnv: common.argv.env || 'local'
     },
     sauceUser: process.env.SAUCE_USERNAME,

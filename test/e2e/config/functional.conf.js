@@ -11,10 +11,10 @@ const config = {
     framework: 'custom',
     frameworkPath: require.resolve('protractor-cucumber-framework'),
     specs: common.specFilesFilter,
-    baseUrl: process.env.TEST_URL || 'http://localhost:3000/',
+    baseUrl: process.env.TEST_URL || 'http://localhost:3002/',
 
     params: {
-        serverUrls: process.env.TEST_URL || 'http://localhost:3000/',
+        serverUrls: process.env.TEST_URL || 'http://localhost:3002/',
         targetEnv: common.argv.env || 'local'
     },
 

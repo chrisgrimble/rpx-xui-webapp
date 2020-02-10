@@ -14,7 +14,7 @@ describe('getEnvironment', () => {
   });
 
   it('should return the aat environment for a localhost url.', () => {
-    expect(AppUtils.getEnvironment('https://localhost:3000')).toEqual(
+    expect(AppUtils.getEnvironment('https://localhost:3002')).toEqual(
       AppConstants.ENVIRONMENT_NAMES.aat);
   });
 

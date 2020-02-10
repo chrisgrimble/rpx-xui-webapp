@@ -8,7 +8,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Run `npm run start:node`
 
 ## Frontend 
-Run `npm run start:ng` for a dev server in separate terminal. Navigate to `http://localhost:3000/`. The app will automatically reload if you change any of the source files.
+Run `npm run start:ng` for a dev server in separate terminal. Navigate to `http://localhost:3002/`. The app will automatically reload if you change any of the source files.
 
 
 ## Code scaffolding

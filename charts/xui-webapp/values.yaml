@@ -1,5 +1,5 @@
 nodejs:
-  applicationPort: 3000
+  applicationPort: 3002
   memoryLimits: 1024Mi
   cpuLimits: 1000m
   environment:

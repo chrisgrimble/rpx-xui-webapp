@@ -39,7 +39,7 @@ const localConfig = [
       proxyType: 'manual',
       httpProxy: 'proxyout.reform.hmcts.net:8080',
       sslProxy: 'proxyout.reform.hmcts.net:8080',
-      noProxy: 'localhost:3000'
+      noProxy: 'localhost:3002'
     }
   }
 ];
@@ -58,9 +58,9 @@ const config = {
   //   '../features/**/questions.feature',
   //   '../features/**/recentEvents.feature',
   // ],
-  baseUrl: process.env.TEST_URL || 'http://localhost:3000/',
+  baseUrl: process.env.TEST_URL || 'http://localhost:3002/',
   params: {
-    serverUrls: process.env.TEST_URL || 'http://localhost:3000/',
+    serverUrls: process.env.TEST_URL || 'http://localhost:3002/',
     targetEnv: argv.env || 'local',
     // username: process.env.TEST_EMAIL,
     // password: process.env.TEST_PASSWORD,

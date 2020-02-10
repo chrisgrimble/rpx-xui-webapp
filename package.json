@@ -17,7 +17,7 @@
     "test:node": "cd api && npm run test",
     "coverage:node": "cd api && npm run coverage",
     "ng": "ng",
-    "start:ng": "ng serve --port 3000 --host 0.0.0.0 --proxy-config proxy.config.json",
+    "start:ng": "ng serve --port 3002 --host 0.0.0.0 --proxy-config proxy.config.json",
     "build:ng": "ng build",
     "build:docker": "npm run build:prod && docker build -t xui .",
     "lint": "npm run lint:ng && npm run lint:node",
